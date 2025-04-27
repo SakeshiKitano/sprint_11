@@ -17,13 +17,3 @@ def driver(scope="function"):
     driver.get(main_site)
     yield driver
     driver.quit()
-
-
-@pytest.fixture
-def login(driver):
-    driver.find_element(*Locators.LOGIN_BUTTON_MAIN_PAGE).click()
-    driver.find_element(*Locators.EMAIL_INPUT).send_keys(Credentials.email)
-    driver.find_element(*Locators.PASS_INPUT).send_keys(Credentials.password)
-    driver.find_element(*Locators.LOGIN_BUTTON_AUTH_PAGE).click()
-
-    return driver

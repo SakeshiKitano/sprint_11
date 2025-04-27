@@ -15,7 +15,8 @@ class Locators:
     # кнопка Войти на форме входа в акк
     LOGIN_BUTTON_AUTH_PAGE = (By.XPATH, "//button[text()='Войти']")
     #ссылка на логин, на форме регистрации
-    LOGIN_LINK=(By.XPATH, "//p[@class='undefined text text_type_main-default text_color_inactive mb-4']/a[text()='Войти']")
+    LOGIN_LINK=(By.XPATH,
+                "//p[@class='undefined text text_type_main-default text_color_inactive mb-4']/a[text()='Войти']")
     # ссылка на регистрацию, на форме входа в аккаунт
     REGISTER_LINK = (By.XPATH,
                      "//p[@class='undefined text text_type_main-default text_color_inactive mb-4']/a[text()='Зарегистрироваться']")
@@ -25,4 +26,11 @@ class Locators:
     REGISTER_HEADER = (By.CSS_SELECTOR, "h2:contains('Регистрация')")
     #Сообщение Некорректный пароль
     ERROR_MESSAGE = (By.XPATH, "//form[@class = 'Auth_form__3qKeq mb-20']//p[text()='Некорректный пароль']")
+    #Ссылка Личный кабинет
+    PERSONAL_ACC = (By.XPATH, "//nav[@class= 'AppHeader_header__nav__g5hnF']//p[text() = 'Личный Кабинет']")
+    #кнопка Оформить заказ
+    PLACE_ORDER = (By.XPATH,"//section[@class = 'BurgerConstructor_basket__29Cd7 mt-25 ']//button[text() = 'Оформить заказ']")
+    #ссылка Восстановить пароль
+    RESTORE_PASS_LINK = (By.XPATH, "//div[@class = 'Auth_login__3hAey']//a[text() = 'Восстановить пароль']")
+
 
