@@ -38,6 +38,12 @@ class Locators:
     CONSTRUKT_BUTTON = (By.XPATH, "//ul[@class='AppHeader_header__list__3oKJj']/li[1]/a[@class = 'AppHeader_header__link__3D_hX']")
     #кнопка Выход из аккаунта
     EXIT_ACC_BUTTON = (By.XPATH, "//div[@class = 'Account_account__vgk_w']//button[text()= 'Выход']")
+    # Кнопка "Булки"
+    BUNS_BUTTON = (By.XPATH, ".//span[contains(text(),'Булки')]")
+    # Кнопка "Соусы"
+    SAUCES_BUTTON = (By.XPATH, ".//span[contains(text(),'Соусы')]")
+    # Кнопка "Начинки"
+    FILLINGS_BUTTON = (By.XPATH, ".//span[contains(text(),'Начинки')]")
 
 
 
