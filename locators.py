@@ -32,5 +32,12 @@ class Locators:
     PLACE_ORDER = (By.XPATH,"//section[@class = 'BurgerConstructor_basket__29Cd7 mt-25 ']//button[text() = 'Оформить заказ']")
     #ссылка Восстановить пароль
     RESTORE_PASS_LINK = (By.XPATH, "//div[@class = 'Auth_login__3hAey']//a[text() = 'Восстановить пароль']")
+    #ссылка Профиль
+    PROFILE_LINK = (By.XPATH, "//div[@class = 'Account_account__vgk_w']//a[text()= 'Профиль']")
+    #кнопка Конструктор
+    CONSTRUKT_BUTTON = (By.XPATH, "//ul[@class='AppHeader_header__list__3oKJj']/li[1]/a[@class = 'AppHeader_header__link__3D_hX']")
+    #кнопка Выход из аккаунта
+    EXIT_ACC_BUTTON = (By.XPATH, "//div[@class = 'Account_account__vgk_w']//button[text()= 'Выход']")
+
 
 

@@ -3,6 +3,8 @@ import string
 faker = Faker()
 import random
 
+
+
 def generate_registration_data():
     first_name = faker.first_name().lower()
     last_name = faker.last_name().lower()
@@ -23,3 +25,6 @@ def generate_password(length):
     letters_and_digits = string.ascii_letters + string.digits
     password = ''.join(random.choice(letters_and_digits) for _ in range(length))
     return password
+
+
+
