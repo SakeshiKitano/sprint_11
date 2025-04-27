@@ -10,7 +10,7 @@ from locators import Locators
 
 
 @pytest.fixture
-def driver():
+def driver(scope="function"):
     options = Options()
     options.add_argument("--window-size=1920,1080")  # Задаем размер окна
     driver = webdriver.Chrome(options=options)
