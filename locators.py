@@ -35,7 +35,7 @@ class Locators:
     #ссылка Профиль
     PROFILE_LINK = (By.XPATH, "//div[@class = 'Account_account__vgk_w']//a[text()= 'Профиль']")
     #кнопка Конструктор
-    CONSTRUKT_BUTTON = (By.XPATH, "//ul[@class='AppHeader_header__list__3oKJj']/li[1]/a[@class = 'AppHeader_header__link__3D_hX']")
+    CONSTRUKT_BUTTON = (By.XPATH, "//a[contains(@class, 'AppHeader_header__link__3D_hX') and p[contains(text(), 'Конструктор')]]")
     #кнопка Выход из аккаунта
     EXIT_ACC_BUTTON = (By.XPATH, "//div[@class = 'Account_account__vgk_w']//button[text()= 'Выход']")
     # Кнопка "Булки"
@@ -44,6 +44,7 @@ class Locators:
     SAUCES_BUTTON = (By.XPATH, ".//span[contains(text(),'Соусы')]")
     # Кнопка "Начинки"
     FILLINGS_BUTTON = (By.XPATH, ".//span[contains(text(),'Начинки')]")
-
-
+    ACTIVE_BUNS_BUTTON = (By.XPATH, "//div[contains(@class, 'tab_type_current') and span[contains(text(), 'Булки')]]")
+    ACTIVE_SAUCES_BUTTON = (By.XPATH, "//div[contains(@class, 'tab_type_current') and span[contains(text(), 'Соусы')]]")
+    ACTIVE_FILLINGS_BUTTON = (By.XPATH, "//div[contains(@class, 'tab_type_current') and span[contains(text(), 'Начинки')]]")
 

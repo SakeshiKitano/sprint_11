@@ -1,9 +1,8 @@
-import time
 
-import pytest
+
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium import webdriver
+
 from data import Credentials
 from locators import Locators
 from curl import *
@@ -40,7 +39,6 @@ class TestPageTransitions:
         driver.find_element(*Locators.PERSONAL_ACC).click()
         WebDriverWait(driver, 6).until(EC.visibility_of_element_located(Locators.PROFILE_LINK))
         driver.find_element(*Locators.EXIT_ACC_BUTTON).click()
-        #time.sleep(4)
         reg_text = WebDriverWait(driver, 10).until(EC.visibility_of_element_located(Locators.LOGIN_HEADER)).text
         assert reg_text == 'Вход'
         assert driver.current_url == main_site + 'login'
